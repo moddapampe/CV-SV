@@ -1,0 +1,223 @@
+    * {
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    html {
+        background: white;
+        font-family: "Bangers", cursive;
+        overflow: scroll;
+    }
+    
+    body {
+        position: absolute;
+        max-width: 100%;
+        position: static;
+        margin: 0 auto;
+        width: 1280px;
+        height: auto;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 200% 200%;
+        animation: gradient 15s ease infinite;
+        background-position: center;
+        overflow: hidden;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    header {
+        background-color: rgba(81, 67, 21, 0.1);
+        height: 40vh;
+    }
+    
+    main {
+        background-color: rgba(81, 67, 21, 0.15);
+        letter-spacing: .125em;
+        display: flex;
+        line-height: 2rem;
+        height: 35vh;
+    }
+    
+    .cv-cube {
+        position: relative;
+        margin-left: 10vw;
+        padding-top: 12vh;
+        padding-left: 2rem;
+        width: 10rem;
+        height: 10rem;
+        background-color: #00A7FF;
+        color: #f5d742;
+        font-weight: 200;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        border-radius: 2px;
+        text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+        box-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+        ;
+        overflow: hidden;
+    }
+    
+    img {
+        position: relative;
+        align-self: flex-end;
+        margin-left: auto;
+        display: block;
+        width: 12rem;
+        height: 10rem;
+        padding: .5rem;
+        background-color: #00A7FF;
+        border: 1px solid black;
+        border-right: 2.5rem solid #00A7FF;
+        box-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+        ;
+    }
+    
+    h1 {
+        display: block;
+        position: relative;
+        margin-left: 9vw;
+        margin-top: -5rem;
+        padding: .25em;
+        font-size: 3.5rem;
+        font-weight: 200;
+        font-style: normal;
+        color: #FFF001;
+        text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+        animation: fadeIn 5s;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    ul {
+        font-size: 2rem;
+        font-style: normal;
+        color: #00A7FF;
+        text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+    }
+    
+    li {
+        list-style: none;
+        font-weight: 200;
+        font-size: 1rem;
+        font-style: normal;
+        color: #FFF001;
+        text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+    }
+    
+    a {
+        text-decoration: none;
+        color: #FFF001;
+    }
+    
+    a:hover {
+        color: #00A7FF;
+        text-decoration: wavy;
+    }
+    
+    .personal-data {
+        display: inline-block;
+        margin-left: 7.5vw;
+        width: 20em;
+    }
+    
+    .links {
+        display: inline-block;
+        flex-direction: row;
+        margin-left: 12vw;
+        width: 25em;
+    }
+    
+    section {
+        position: relative;
+        display: flex;
+        height: 35vh;
+        line-height: 2rem;
+        color: #00A7FF;
+        text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+    }
+    
+    .education {
+        display: inline-block;
+        padding: 2.5em;
+        width: 20em;
+        margin-top: -1.5rem;
+        margin-left: 7.5vw;
+    }
+    
+    #educate {
+        margin-top: 0.5em;
+        margin-left: -2.5rem;
+        width: 20em;
+        letter-spacing: .025em;
+    }
+    
+    #vocational {
+        letter-spacing: .025em;
+        display: inline-block;
+        margin-left: -2vw;
+        width: 12em;
+    }
+    
+    .career {
+        display: inline-block;
+        flex-direction: row;
+        margin-top: 1.75em;
+        margin-left: 16rem;
+        padding-left: 3vw;
+        width: 18.5vw;
+    }
+    
+    #years {
+        letter-spacing: .025em;
+        display: inline-block;
+        margin-top: 0.25vh;
+        margin-left: -2.5em;
+        width: 40vw;
+    }
+    
+    footer {
+        background-color: rgba(81, 67, 21, 0.2);
+    }
+    
+    .skills {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #knowledge {
+        display: inline-block;
+        width: 30vw;
+    }
+    
+    #knowledge>ul {
+        font-size: 3vh;
+    }
+    
+    #knowledge>li {
+        letter-spacing: .2em;
+        font-size: .5em;
+    }
