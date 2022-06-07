@@ -16,7 +16,7 @@
         margin: 0 auto;
         width: 1280px;
         height: auto;
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background: linear-gradient(-45deg, #91371c, #6dca97, #23a6d5, #23d5ab);
         background-size: 200% 200%;
         animation: gradient 15s ease infinite;
         background-position: center;
@@ -61,7 +61,7 @@
         font-weight: 200;
         font-size: 2rem;
         letter-spacing: 2px;
-        border-radius: 2px;
+        border-radius: 4px;
         text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
         box-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
         ;
@@ -86,13 +86,21 @@
     h1 {
         display: block;
         position: relative;
-        margin-left: 9vw;
-        margin-top: -5rem;
+        margin-left: 5vw;
+        margin-top: -17.5rem;
         padding: .25em;
-        font-size: 3.5rem;
+        font-size: 5rem;
         font-weight: 200;
         font-style: normal;
         color: #FFF001;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #b80000;
+        -webkit-text-fill-color: #fff001;
+        -webkit-box-reflect: below -62px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent), to(rgba(255, 255, 255, 0.025)));
+        letter-spacing: 3.5px;
+        font-family: Bangers;
+        text-align: center;
+        text-shadow: 9px 7px 5px #A3A3A3;
         text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
         animation: fadeIn 5s;
     }
@@ -109,7 +117,7 @@
     ul {
         font-size: 2rem;
         font-style: normal;
-        color: #00A7FF;
+        color: #52BB43;
         text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
     }
     
@@ -128,7 +136,7 @@
     }
     
     a:hover {
-        color: #00A7FF;
+        color: #EE213F;
         text-decoration: wavy;
     }
     
