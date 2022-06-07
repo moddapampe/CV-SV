@@ -42,10 +42,17 @@
     }
     
     main {
+        font-size: 1.5em;
         letter-spacing: .125em;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        padding: 1rem;
+        justify-items: stretch;
+        align-items: stretch;
         line-height: 2rem;
-        height: 35vh;
     }
     
     .cv-cube {
@@ -72,12 +79,10 @@
         align-self: flex-end;
         margin-left: auto;
         display: block;
-        width: 12rem;
-        height: 12rem;
-        padding: .5rem;
-        border: 1px solid black;
-        box-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
-        ;
+        width: 15rem;
+        height: 15rem;
+        padding: 2.5rem;
+        margin-top: -3rem;
     }
     
     h1 {
@@ -125,7 +130,6 @@
     }
     
     ul {
-        font-size: 2rem;
         font-style: normal;
         color: #52BB43;
         text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
@@ -134,10 +138,9 @@
     li {
         list-style: none;
         font-weight: 200;
-        font-size: 1rem;
         font-style: normal;
         color: #FFF001;
-        padding-left: .5rem;
+        padding-left: .5em;
         text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
     }
     
@@ -149,67 +152,6 @@
     a:hover {
         color: #EE213F;
         text-decoration: wavy;
-    }
-    
-    .personal-data {
-        display: inline-block;
-        margin-left: 7.5vw;
-        width: 20em;
-    }
-    
-    .links {
-        display: inline-block;
-        flex-direction: row;
-        margin-left: 12vw;
-        width: 25em;
-    }
-    
-    section {
-        position: relative;
-        display: flex;
-        height: 35vh;
-        line-height: 2rem;
-        color: #00A7FF;
-        text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
-    }
-    
-    .education {
-        display: inline-block;
-        padding: 2.5em;
-        width: 20em;
-        margin-top: -1.5rem;
-        margin-left: 7.5vw;
-    }
-    
-    #educate {
-        margin-top: 0.5em;
-        margin-left: -2.5rem;
-        width: 20em;
-        letter-spacing: .025em;
-    }
-    
-    #vocational {
-        letter-spacing: .025em;
-        display: inline-block;
-        margin-left: -2vw;
-        width: 12em;
-    }
-    
-    .career {
-        display: inline-block;
-        flex-direction: row;
-        margin-top: 1.75em;
-        margin-left: 11rem;
-        padding-left: 3rem;
-        width: 40vw;
-    }
-    
-    #years {
-        letter-spacing: .025em;
-        display: inline-block;
-        margin-top: 0.25vh;
-        margin-left: -2.5em;
-        width: 40vw;
     }
     
     footer {
@@ -232,13 +174,10 @@
         width: 30vw;
     }
     
-    #knowledge>ul {
-        font-size: 3vh;
-    }
+    #knowledge>ul {}
     
     #knowledge>li {
         letter-spacing: .2em;
-        font-size: .5em;
     }
     
     .clip-animation {
