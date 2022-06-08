@@ -13,7 +13,7 @@
         position: absolute;
         max-width: 100%;
         margin: 0 auto;
-        width: 1280px;
+        width: 1200px;
         height: auto;
         -webkit-font-smoothing: antialiased;
         background: linear-gradient(-45deg, hsla(115, 68%, 34%, 0.65), hsla(147, 47%, 61%, 0.65), hsla(196, 72%, 49%, 0.65), hsl(166, 72%, 49%, 0.65));
@@ -38,12 +38,12 @@
     
     header {
         background-color: rgba(81, 67, 21, 0.1);
-        height: 40vh;
+        height: 30vh;
     }
     
     main {
-        font-size: 2.5em;
-        letter-spacing: .125em;
+        font-size: 1.5em;
+        letter-spacing: .1em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -52,18 +52,20 @@
         padding: 1rem;
         justify-items: stretch;
         align-items: stretch;
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
     
     .cv-cube {
         position: relative;
-        margin-left: 10vw;
+        margin-left: 5vw;
         padding-top: 12vh;
         padding-left: 2rem;
         width: 10rem;
         height: 10rem;
         background-color: #00A7FF;
         color: #f5d742;
+        -webkit-text-stroke-width: .75px;
+        -webkit-text-stroke-color: #b80000;
         font-weight: 200;
         font-size: 2rem;
         letter-spacing: 2px;
@@ -94,8 +96,7 @@
         font-size: 5rem;
         font-weight: 200;
         font-style: normal;
-        color: #FFF001;
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #b80000;
         -webkit-text-fill-color: #fff001;
         -webkit-box-reflect: below -62px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent), to(rgba(255, 255, 255, 0.025)));
@@ -105,14 +106,16 @@
         text-shadow: 9px 7px 5px #A3A3A3;
         text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
         animation: fadeIn 8s;
-        transition: all 2.5s ease-out;
+        transition: all .5s ease-out;
     }
     
     h1:hover {
+        transition: all .5s ease-in-out;
         transform: scale(1.1);
         opacity: 1;
         border-radius: 20px;
-        transition: all 2s ease-in-out;
+        -webkit-text-stroke-color: #fff001;
+        -webkit-text-fill-color: #b80000;
         text-shadow: 15px 15px 15px rgb(168, 168, 168);
     }
     
@@ -131,8 +134,9 @@
     
     ul {
         padding: .25em;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #8833af;
+        font-size: 2.5rem;
+        -webkit-text-stroke-width: .75px;
+        -webkit-text-stroke-color: #b80000;
         font-style: normal;
         color: #52BB43;
         text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
@@ -140,6 +144,7 @@
     
     li {
         list-style: none;
+        font-size: 1.5rem;
         font-weight: 200;
         font-style: normal;
         color: #FFF001;
@@ -148,7 +153,6 @@
     }
     
     a {
-        transition: all 2s ease-out;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #b80000;
         text-decoration: none;
@@ -157,14 +161,17 @@
     
     a:hover {
         transform: scale(1.1);
-        transition: all .25s ease-in;
+        transition: all .25s ease-in-out;
         color: #EE213F;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FFF001;
         text-decoration: wavy;
     }
     
     footer {
         background-color: rgba(81, 67, 21, 0.2);
-        font-size: 2.5rem;
+        letter-spacing: .0125em;
+        font-size: 4rem;
     }
     
     .clip-animation {
